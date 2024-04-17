@@ -1,0 +1,11 @@
+<div class="grid h-screen grid-cols-1 place-items-center bg-slate-400">
+  <div class="gap-x grid grid-rows-6 rounded-lg border-4 border-black text-2xl">
+    <div class="row-span-1 border-b-2 border-black bg-blue-300">Chat ABC</div>
+    <div class="row-span-5 grid grid-rows-3 bg-white">
+      <div class="grid grid-cols-4"><div class="col-span-3 col-start-1 rounded-e-2xl rounded-tl-2xl bg-green-200">Je mets notre charte graphique au format PDF ?</div></div>
+      <div class="grid grid-cols-4">
+        <div class="col-end-5 rounded-s-2xl rounded-tr-2xl bg-pink-100">Surtout pas.</div>
+      </div>
+    </div>
+  </div>
+</div>
