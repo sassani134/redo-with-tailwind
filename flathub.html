@@ -1,13 +1,25 @@
 <div class="flex h-dvh flex-col bg-slate-500" id="all">
-  <header class="mx-auto" id="navbar">
-    <div class="" id="">
-      <img src="/img/logo.svg" class="h-4" alt="Tailwind Play" />
-      <input class="" id="search" />
-      <p class="">Publier</p>
-      <p class="">Forum</p>
-      <p class="">A propos</p>
-      <p class="">Se connecter</p>
+  <header class="" id="navbar">
+    <img src="/img/logo.svg" class="h-4" alt="Tailwind Play" />
+    <div class="relative">
+      <label for="Search" class="sr-only"> Search </label>
+
+      <input type="text" id="Search" placeholder="Recherche d'applications" class="rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm" />
+
+      <span class="absolute inset-y-0 end-0 grid w-10 place-content-center">
+        <button type="button" class="text-gray-600 hover:text-gray-700">
+          <span class="sr-only">Search</span>
+
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+          </svg>
+        </button>
+      </span>
     </div>
+    <p class="">Publier</p>
+    <p class="">Forum</p>
+    <p class="">A propos</p>
+    <p class="">Se connecter</p>
   </header>
 
   <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8" id="carousel">
@@ -31,22 +43,22 @@
       <label for="Tab" class="sr-only">Tab</label>
 
       <select id="Tab" class="w-full rounded-md border-gray-200">
-        <option>Settings</option>
-        <option>Messages</option>
-        <option>Archive</option>
-        <option select>Notifications</option>
+        <option>Trending</option>
+        <option>Populaires</option>
+        <option>New</option>
+        <option select>Updated</option>
       </select>
     </div>
 
     <div class="hidden sm:block">
       <nav class="flex gap-6" aria-label="Tabs">
-        <a href="#" class="shrink-0 rounded-lg p-2 text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700"> Settings </a>
+        <a href="#" class="shrink-0 rounded-lg p-2 text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700"> Trending </a>
 
-        <a href="#" class="shrink-0 rounded-lg p-2 text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700"> Messages </a>
+        <a href="#" class="shrink-0 rounded-lg p-2 text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700"> Populaires </a>
 
-        <a href="#" class="shrink-0 rounded-lg p-2 text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700"> Archive </a>
+        <a href="#" class="shrink-0 rounded-lg p-2 text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700"> New </a>
 
-        <a href="#" class="shrink-0 rounded-lg bg-sky-100 p-2 text-sm font-medium text-sky-600" aria-current="page"> Notifications </a>
+        <a href="#" class="shrink-0 rounded-lg bg-sky-100 p-2 text-sm font-medium text-sky-600" aria-current="page"> Updated </a>
       </nav>
     </div>
   </div>
@@ -60,4 +72,96 @@
     </div>
     <button class="" id="">Plus de Productivité</button>
   </div>
+
+  <footer class="bg-inherit">
+    <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+      <div class="grid grid-cols-1 gap-8 border-t border-gray-100 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16">
+        <div>
+          <p class="font-medium text-gray-900">Services</p>
+
+          <ul class="mt-6 space-y-4 text-sm">
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> 1on1 Coaching </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Company Review </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> HR Consulting </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> SEO Optimisation </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-medium text-gray-900">Company</p>
+
+          <ul class="mt-6 space-y-4 text-sm">
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> About </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Meet the Team </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-medium text-gray-900">Helpful Links</p>
+
+          <ul class="mt-6 space-y-4 text-sm">
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Contact </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> FAQs </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Live Chat </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-medium text-gray-900">Legal</p>
+
+          <ul class="mt-6 space-y-4 text-sm">
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Accessibility </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Returns Policy </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Refund Policy </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Hiring Statistics </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="text-xs text-gray-500">&copy; 2022. Company Name. All rights reserved.</p>
+    </div>
+  </footer>
 </div>
