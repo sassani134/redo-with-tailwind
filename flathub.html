@@ -1,14 +1,56 @@
-<div class="flex h-screen bg-slate-500 " id="all">
-  <div class="" id="navbar">
-    <img src="/img/logo.svg" class="h-4" alt="Tailwind Play" />
-    <input class="" id="search">
-    <p class="">Publier</p>
-    <p class="">Forum</p>
-    <p class="">A propos</p>
-    <p class="">Se connecter</p>
-  </div>
+<div class="flex h-screen bg-slate-500" id="all">
+  <header class="" id="navbar">
+    <div class="" id="">
+      <img src="/img/logo.svg" class="h-4" alt="Tailwind Play" />
+      <input class="" id="search" />
+      <p class="">Publier</p>
+      <p class="">Forum</p>
+      <p class="">A propos</p>
+      <p class="">Se connecter</p>
+    </div>
+  </header>
+
   <div class="" id="carrousel"></div>
   <div class="" id="featured"></div>
-  <div class="" id="tab"></div>
-  <div class="" id="byTag"></div>
+  <div class="" id="tab">
+    <!--
+  Heads up! 👋
+
+  Plugins:
+    - @tailwindcss/forms
+-->
+
+    <div>
+      <div class="sm:hidden">
+        <label for="Tab" class="sr-only">Tab</label>
+
+        <select id="Tab" class="w-full rounded-md border-red-500">
+          <option>Trending</option>
+          <option>Populaires</option>
+          <option>New</option>
+          <option select>Updated</option>
+        </select>
+      </div>
+
+      <div class="hidden sm:block">
+        <nav class="flex gap-6" aria-label="Tabs">
+          <a href="#" class="shrink-0 rounded-lg p-2 text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700"> Trending </a>
+
+          <a href="#" class="shrink-0 rounded-lg p-2 text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700"> Populaires </a>
+
+          <a href="#" class="shrink-0 rounded-lg p-2 text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700"> New </a>
+
+          <a href="#" class="shrink-0 rounded-lg bg-gray-100 p-2 text-sm font-medium text-gray-700" aria-current="page"> Updated </a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="" id="byTag">
+    <p class="" id="">Productivité</p>
+    <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
+      <div class="h-32 rounded-lg bg-gray-200"></div>
+      <div class="h-32 rounded-lg bg-gray-200"></div>
+      <div class="h-32 rounded-lg bg-gray-200"></div>
+    </div>
+  </div>
 </div>
